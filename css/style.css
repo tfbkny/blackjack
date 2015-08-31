@@ -10,7 +10,7 @@ div#game-container {
   left:0;
   width: 1024px;
   height: 768px;
-  background-image: url('/images/blackjacktable.jpg');
+  background-image: url('/blackjack/images/blackjacktable.jpg');
   background-repeat: no-repeat;
 }
 
