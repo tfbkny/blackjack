@@ -1,0 +1,289 @@
+body {
+ background-color: #003F1C;
+ color: #fff;
+ font-family: copperplate, sans-serif;;
+}
+
+div#game-container {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 1024px;
+  height: 768px;
+  background-image: url('/images/blackjacktable.jpg');
+  background-repeat: no-repeat;
+}
+
+div{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+/********************************************/
+/*         Betting buttons styling          */
+/********************************************/
+#bet10{
+  cursor:pointer;
+  position:fixed;
+  top:500px;
+  left:850px;
+  width:70px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#bet25{
+  cursor:pointer;
+  position:fixed;
+  top:500px;
+  left:930px;
+  width:70px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#bet50{
+  cursor:pointer;
+  position:fixed;
+  top:550px;
+  left:850px;
+  width:70px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#bet100{
+  cursor:pointer;
+  position:fixed;
+  top:550px;
+  left:930px;
+  width:70px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+.btn-yes{
+  border:1px solid white;
+  font-size: 1.5em;
+  background-color: #090;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-no{
+  border:1px solid white;
+  font-size: 1.5em;
+  background-color: #900;
+  text-align: center;
+  cursor: pointer;
+}
+
+#player-balance-display {
+  position:fixed;
+  top:410px;
+  left:850px;
+  width:150px;
+  height:40px;
+  border:1px solid #fff;
+  color:#fff;font-size:1.7em;
+  text-align:center;
+  line-height:1.5em;
+  background-color:#aaa;
+}
+
+#hit {
+  cursor:pointer;
+  position:fixed;
+  top:600px;
+  left:850px;
+  width:150px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#stand {
+  cursor:pointer;
+  position:fixed;
+  top:650px;
+  left:850px;
+  width:150px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#deal-initial-hand-button{
+  cursor:pointer;
+  position:fixed;
+  top:650px;
+  left:850px;
+  width:150px;
+  height:30px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.2em;
+  background-color:#A00;
+}
+
+#player-balance-display-title {
+  position:fixed; top:390px;
+  left:850px;
+  width:150px;
+  height:40px;
+  color:#fff;
+  font-size:1em;
+  text-align:center;
+  line-height:1em;
+}
+
+#player-balance-display {
+  position:fixed;
+  top:410px;
+  left:850px;
+  width:150px;
+  height:40px;
+  border:1px solid #fff;
+  color:#fff;font-size:1.7em;
+  text-align:center;line-height:1.5em;
+  background-color:#aaa
+}
+
+#confirm-bet{
+  position:fixed;
+  top:500px;
+  left:850px;
+  width:150px;
+  height:150px;
+}
+
+#placed-bet-display {
+  position:fixed;
+  top:500px;
+  left:850px;
+  width:150px;
+  height:40px;
+  background-color: #aaa;
+  border: 1px solor white;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/* Class for hiding elements */
+.hide {
+  display:none;
+}
+/*======================================*/
+/* Display points for Player and Dealer */
+/*======================================*/
+#dealer-hand-display-points{
+  user-select: none;
+  cursor:default;
+  position:fixed;
+  top:20px;
+  left:850px;
+  width:150px;
+  height:45px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1em;
+  text-align:center;
+  line-height:1.1em;
+  background-color:#00A;
+}
+
+#player-hand-display-points {
+  cursor:default;
+  position:fixed;
+  top:80px;
+  left:850px;
+  width:150px;
+  height:45px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1em;
+  text-align:center;
+  line-height:1.1em;
+  background-color:#A00;
+}
+
+#round-winner {
+  cursor:default;
+  position:fixed;
+  top:140px;
+  left:850px;
+  width:150px;
+  height:45px;
+  border:1px solid #fff;
+  color:#fff;
+  font-size:1.5em;
+  text-align:center;
+  line-height:1.25em;
+  background-color:#408ACB;
+}
+
+.hand-points {
+  font-size: 1.5em;
+}
+
+/* Remove bullets from list */
+
+li {
+  list-style-type: none;
+}
+
+/*===================*/
+/* Dealer Hand Cards */
+/*===================*/
+.dealer-card{
+  position:fixed;
+  width:150px;
+  height:200px;
+  /*left:150px; Shifted programmatically */
+  top:20px;
+  /*border:1px solid white;
+  background-color:#000044;*/
+}
+
+.player-card{
+  position:fixed;
+  width:150px;
+  height:200px;
+  /*left:150px; Shifted programmatically */
+  top:480px;
+  /*border:1px solid white;
+  background-color:#440000;*/
+}
