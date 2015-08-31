@@ -513,9 +513,9 @@ $(function() {
       // Dealer's 1st card not shown until the player will stand and will be the dealer's turn to play
       if(whoIsPlaying === 'dealer' && index === 0){
         //create an element to show the dealer's first card face down
-        var cardsSVG = $('<img src="/images/cardReverseSide.jpg" width="150" height="210"/>')
+        var cardsSVG = $('<img src="/blackjack/images/cardReverseSide.jpg" width="150" height="210"/>')
       }else{
-        var cardsSVG = $('<object type="image/svg+xml" data="/images/'+cardsArrayForRendering[index]+'.svg" width="150">Your browser does not support SVG</object>')
+        var cardsSVG = $('<object type="image/svg+xml" data="/blackjack/images/'+cardsArrayForRendering[index]+'.svg" width="150">Your browser does not support SVG</object>')
       }
       // append card if not displayed if the element with the current id exists, skip it... if it does not exist add it to the list
       if ($('#'+elementIdPrefix+(index+1)).length ===0 ){
@@ -530,7 +530,7 @@ $(function() {
 
 
   var revealDealerHiddenCard = function(){
-    var firstDealerCardFaceUpSVG = $('<object type="image/svg+xml" data="/images/'+dealerCardsToDisplay[0]+'.svg" width="150">Your browser does not support SVG</object>')
+    var firstDealerCardFaceUpSVG = $('<object type="image/svg+xml" data="/blackjack/images/'+dealerCardsToDisplay[0]+'.svg" width="150">Your browser does not support SVG</object>')
     if ($('#dc1').length !== 0){
       $('#dc1 img').remove();// remove the face-down card
       $('#dc1').append(firstDealerCardFaceUpSVG);
